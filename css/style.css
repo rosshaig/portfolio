@@ -61,6 +61,13 @@ h2 {
   /* float: right; */
 }
 
+.contact {
+  padding: 5px;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
 ul.bullet li {
 	list-style-image: url("../images/bullet-img-25.png");
 }
