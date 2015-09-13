@@ -1,11 +1,14 @@
 body {
-  background-color: #F6F6F6;
-  font-family: "Helvetica", sans-serif;
-  border-top: 5px solid #222222;
-  border-bottom: 5px solid #222222;
+  background: url("../images/bg-4.jpg");
+  font-family: "Courier", monospace;
+  border-image: url("../images/border_700_2.png") 100 0 100 0;
+  border-top: 23px;
+  border-bottom: 23px;
+/*  border-top: 5px solid #222222;
+  border-bottom: 5px solid #222222; */
   padding: 50px;
   max-width: 700px;
-  margin: 20px auto 0 auto;
+  margin: 32px auto 32px auto;
 }
 
 p,
@@ -21,11 +24,9 @@ a {
 }
 
 nav,
-h1 {
-  text-align: center;
-}
-
-.center {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -33,7 +34,17 @@ nav strong {
   font-style: italic;
 }
 
+hr {
+    display: block;
+    border: 0px;
+    background-image: url("../images/hr_img_400.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
 h1,
+h2,
 h3 {
   text-transform: uppercase;
 }
@@ -44,17 +55,19 @@ h2 {
 }
 
 .profile {
-  border: 1px solid #222222;
   padding: 5px;
-  /*display: block;
-  margin: 0 auto 0 auto;*/
-  float: right;
-  background: white;
-  margin: 20px;
+  display: block;
+  margin: 0 auto 0 auto;
+  /* float: right; */
+}
+
+ul.bullet li {
+	list-style-image: url("../images/bullet-img-25.png");
 }
 
 .social-links {
   margin: 30px 0 30px 0;
+  text-align: center;
 }
 
 /* This is for a class */
