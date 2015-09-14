@@ -4,12 +4,13 @@ body {
   border-image: url("../images/border_700_2.png") 100 0 100 0;
   border-top: 23px;
   border-bottom: 23px;
-/*  border-top: 5px solid #222222;
-  border-bottom: 5px solid #222222; */
   padding: 50px;
   max-width: 700px;
   margin: 32px auto 32px auto;
 }
+
+
+/* TEXT */
 
 p,
 ul {
@@ -23,6 +24,12 @@ a {
   color: #05080C;
 }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
 nav,
 h1,
 h2,
@@ -34,6 +41,15 @@ nav strong {
   font-style: italic;
 }
 
+h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* CUSTOM BREAKS (interested to hear your thoughts on this - I'm guessing
+it makes sense from an HTML point of view, and visually it looks just about how
+I want it to, but wonder if this css was the best way about it! */
+
 hr {
     display: block;
     border: 0px;
@@ -43,22 +59,12 @@ hr {
     height: 20px;
 }
 
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 18px;
-  letter-spacing: 2px;
-}
+/* CLASSES */
 
 .profile {
   padding: 5px;
   display: block;
   margin: 0 auto 0 auto;
-  /* float: right; */
 }
 
 .contact {
@@ -70,6 +76,7 @@ h2 {
 
 ul.bullet li {
 	list-style-image: url("../images/bullet-img-25.png");
+  margin-bottom: 30px;
 }
 
 .social-links {
@@ -77,14 +84,11 @@ ul.bullet li {
   text-align: center;
 }
 
-/* This is for a class */
-/*.navigation-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
+.bio {
+  margin:0 0 30px 0;
 }
 
-.navigation-list li{
-
-}*/
+.project {
+  float: right;
+  padding: 5px;
+}
